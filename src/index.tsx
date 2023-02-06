@@ -9,7 +9,7 @@ import {
 import App from './app';
 import ErrorPage from './pages/error/error';
 import HomePage from './pages/home/home';
-import SettingsPage from './pages/settings/settings';
+import SettingsPage, { settingsPageLoader } from './pages/settings/settings';
 import reportWebVitals from './reportWebVitals';
 
 const GlobalCSS = css`
@@ -32,6 +32,7 @@ const router = createBrowserRouter([
       {
         path: 'settings',
         element: <SettingsPage />,
+        loader: settingsPageLoader,
       },
     ]
   },

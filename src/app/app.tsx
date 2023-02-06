@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
 
 /**
  * The following styles are cascaded for the whole application
@@ -8,6 +8,10 @@ import { Outlet, Link } from 'react-router-dom';
 const StyledApp = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2em;
+  
+  a.active {
+    color: red;
+  }
 `;
 
 /**
@@ -17,9 +21,9 @@ const StyledApp = styled.div`
 const App = (): React.ReactElement => (
   <StyledApp>
     <h1>Boilerplate</h1>
-    <Link to="home">Home</Link>
+    <NavLink to="home">Home</NavLink>
     <br />
-    <Link to="settings">Settings</Link>
+    <NavLink to="settings">Settings</NavLink>
     <Outlet />
   </StyledApp>
 );
