@@ -18,10 +18,11 @@ Use this boilerplate to build consistant, and clean front end applications with 
 - [ ] Enable Manifest Generator.
 
 ### v0.3.0
+- [x] Create centralized configuration.
 - [ ] Enable Analytics (Google)
 - [ ] Enable client-side logging
 
-### v0.2.2
+### v0.2.1
 - [x] Create home page (/)
 - [x] Create settings page (/settings)
 - [x] Create error page (path not found)

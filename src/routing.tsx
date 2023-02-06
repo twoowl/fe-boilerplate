@@ -2,6 +2,7 @@ import React from 'react';
 import { type RouteObject } from 'react-router-dom';
 
 import App from './app';
+import config from './config';
 import {
   HomePage,
   ErrorPage,
@@ -9,20 +10,20 @@ import {
   settingsPageLoader
 } from './pages';
 
-console.log('process.env.REACT_APP_PUBLIC_URL', process.env.REACT_APP_PUBLIC_URL);
+console.log('publicUrl', config.publicUrl);
 
 const PageRouting: RouteObject[] = [
   {
-    path: `${process.env.REACT_APP_PUBLIC_URL ?? '/'}`,
+    path: `${config.publicUrl}`,
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: `${process.env.REACT_APP_PUBLIC_URL ?? '/'}home`,
+        path: `${config.publicUrl}home`,
         element: <HomePage />,
       },
       {
-        path: `${process.env.REACT_APP_PUBLIC_URL ?? '/'}settings`,
+        path: `${config.publicUrl}settings`,
         element: <SettingsPage />,
         loader: settingsPageLoader,
       },
