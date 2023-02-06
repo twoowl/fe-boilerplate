@@ -10,15 +10,13 @@ Use this boilerplate to build consistant, and clean front end applications with 
 
 ### v0.4.0
 - [ ] Enable Analytics (Google)
+- [ ] Enable client-side logging
 
 ### v0.3.0
 - [ ] Setup Redux state management
-- [ ] Enable 
-
 
 ### v0.2.0
-- [ ] Begin using Styled Components
-- [ ] Enable client-side logging
+- [ ] Configure [Styled Components](https://styled-components.com/) for styling
 
 ### v0.1.0
 - [x] Enable linting using [ESLint](https://eslint.org/)
