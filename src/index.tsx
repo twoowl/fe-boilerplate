@@ -1,8 +1,15 @@
 import { Global, css } from '@emotion/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
 
 import App from './app';
+import ErrorPage from './pages/error/error';
+import HomePage from './pages/home/home';
+import SettingsPage from './pages/settings/settings';
 import reportWebVitals from './reportWebVitals';
 
 const GlobalCSS = css`
@@ -12,13 +19,31 @@ const GlobalCSS = css`
   }
 `;
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: 'home',
+        element: <HomePage />,
+      },
+      {
+        path: 'settings',
+        element: <SettingsPage />,
+      },
+    ]
+  },
+]);
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
     <Global styles={GlobalCSS} />
   </React.StrictMode>
 );
