@@ -1,9 +1,13 @@
 import { Global, css } from '@emotion/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
 
-import App from './app';
 import reportWebVitals from './reportWebVitals';
+import Routing from './routing';
 
 const GlobalCSS = css`
   html, body {
@@ -12,13 +16,15 @@ const GlobalCSS = css`
   }
 `;
 
+const router = createBrowserRouter(Routing);
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
     <Global styles={GlobalCSS} />
   </React.StrictMode>
 );

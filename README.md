@@ -13,14 +13,21 @@ Use this boilerplate to build consistant, and clean front end applications with 
 
 ### v0.5.0
 - [ ] Introduce localization & internationalization
+- [ ] Enable Manifest Generator. 
 
 ### v0.4.0
 - [ ] Enable Analytics (Google)
 - [ ] Enable client-side logging
 
 ### v0.3.0
-- [ ] Enable routing system using React Router.
 - [ ] Enable Redux state management.
+
+### v0.2.2
+- [ ] Create home page (/)
+- [ ] Create settings page (/settings)
+- [ ] Create error page (path not found)
+### v0.2.1
+- [ ] Enable routing system using [React Router](https://reactrouter.com/).
 
 ### v0.2.0
 - [x] Configure [Emotion](https://emotion.sh/) for styling.
