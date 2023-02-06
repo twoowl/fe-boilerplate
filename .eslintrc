@@ -19,6 +19,14 @@
     "@emotion"
   ],
   "rules": {
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
     "@typescript-eslint/semi": 0,
     "@typescript-eslint/comma-dangle": 0,
     "max-len": [

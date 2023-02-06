@@ -19,11 +19,11 @@ Use this boilerplate to build consistant, and clean front end applications with 
 - [ ] Enable client-side logging
 
 ### v0.3.0
-- [ ] Enable routing system using React Router.
 - [ ] Enable Redux state management.
 
 ### v0.2.0
-- [x] Configure [Emotion](https://emotion.sh/) for styling
+- [x] Configure [Emotion](https://emotion.sh/) for styling.
+- [ ] Enable routing system using React Router.
 
 ### v0.1.0
 - [x] Enable linting using [ESLint](https://eslint.org/)
