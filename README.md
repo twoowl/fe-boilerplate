@@ -6,28 +6,26 @@ Use this boilerplate to build consistant, and clean front end applications with 
 
 ### v1.0.0
 - [ ] Enable Server side rendering
-- [ ] Setup dockerized environments (Dev, Prod)
-
-### v0.6.0
-- [ ] Debug Environment for production (Nginx)
+- [ ] Enable Redux state management.
 
 ### v0.5.0
-- [ ] Introduce localization & internationalization
-- [ ] Enable Manifest Generator. 
+- [ ] Setup dockerized environments (Dev, Prod)
+- [ ] Production environment configuration with Nginx
+- [ ] Debug Environment for production
 
 ### v0.4.0
+- [ ] Introduce localization & internationalization (i18Next)
+- [ ] Enable Manifest Generator.
+
+### v0.3.0
 - [ ] Enable Analytics (Google)
 - [ ] Enable client-side logging
 
-### v0.3.0
-- [ ] Enable Redux state management.
-
 ### v0.2.2
-- [ ] Create home page (/)
-- [ ] Create settings page (/settings)
-- [ ] Create error page (path not found)
-### v0.2.1
-- [ ] Enable routing system using [React Router](https://reactrouter.com/).
+- [x] Create home page (/)
+- [x] Create settings page (/settings)
+- [x] Create error page (path not found)
+- [x] Enable routing system using [React Router](https://reactrouter.com/).
 
 ### v0.2.0
 - [x] Configure [Emotion](https://emotion.sh/) for styling.
