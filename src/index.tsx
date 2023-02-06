@@ -6,11 +6,8 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 
-import App from './app';
-import ErrorPage from './pages/error/error';
-import HomePage from './pages/home/home';
-import SettingsPage, { settingsPageLoader } from './pages/settings/settings';
 import reportWebVitals from './reportWebVitals';
+import Routing from './routing';
 
 const GlobalCSS = css`
   html, body {
@@ -19,24 +16,7 @@ const GlobalCSS = css`
   }
 `;
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: 'home',
-        element: <HomePage />,
-      },
-      {
-        path: 'settings',
-        element: <SettingsPage />,
-        loader: settingsPageLoader,
-      },
-    ]
-  },
-]);
+const router = createBrowserRouter(Routing);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
