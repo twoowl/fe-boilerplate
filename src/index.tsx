@@ -1,10 +1,16 @@
+import { Global, css } from '@emotion/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import './index.css';
+const GlobalCSS = css`
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+`;
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,6 +19,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App />
+    <Global styles={GlobalCSS} />
   </React.StrictMode>
 );
 

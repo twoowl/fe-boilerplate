@@ -8,15 +8,22 @@ Use this boilerplate to build consistant, and clean front end applications with 
 - [ ] Enable Server side rendering
 - [ ] Setup dockerized environments (Dev, Prod)
 
+### v0.6.0
+- [ ] Debug Environment for production (Nginx)
+
+### v0.5.0
+- [ ] Introduce localization & internationalization
+
 ### v0.4.0
 - [ ] Enable Analytics (Google)
 - [ ] Enable client-side logging
 
 ### v0.3.0
-- [ ] Setup Redux state management
+- [ ] Enable routing system using React Router.
+- [ ] Enable Redux state management.
 
 ### v0.2.0
-- [ ] Configure [Styled Components](https://styled-components.com/) for styling
+- [x] Configure [Emotion](https://emotion.sh/) for styling
 
 ### v0.1.0
 - [x] Enable linting using [ESLint](https://eslint.org/)

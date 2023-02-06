@@ -15,7 +15,8 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react"
+    "react",
+    "@emotion"
   ],
   "rules": {
     "@typescript-eslint/semi": 0,
