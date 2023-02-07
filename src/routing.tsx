@@ -10,8 +10,6 @@ import {
   settingsPageLoader
 } from './pages';
 
-console.log('publicUrl', config.publicUrl);
-
 const PageRouting: RouteObject[] = [
   {
     path: `${config.publicUrl}`,
