@@ -7,6 +7,7 @@ Use this boilerplate to build consistant, and clean front end applications with 
 ### v1.0.0
 - [ ] Enable Server side rendering
 - [ ] Enable Redux state management.
+- [ ] Enable offline mode.
 
 ### v0.5.0
 - [ ] Setup dockerized environments (Dev, Prod)
@@ -19,8 +20,8 @@ Use this boilerplate to build consistant, and clean front end applications with 
 
 ### v0.3.0
 - [x] Create centralized configuration.
-- [ ] Enable Analytics (Google)
-- [ ] Enable client-side logging
+- [x] Enable Analytics (Google)
+- [x] Enable client-side logging
 
 ### v0.2.1
 - [x] Create home page (/)

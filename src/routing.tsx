@@ -2,13 +2,16 @@ import React from 'react';
 import { type RouteObject } from 'react-router-dom';
 
 import App from './app';
-import config from './config';
 import {
   HomePage,
   ErrorPage,
   SettingsPage,
   settingsPageLoader
 } from './pages';
+import config from './utils/config';
+import { logger } from './utils/logger';
+
+logger.log(config);
 
 const PageRouting: RouteObject[] = [
   {

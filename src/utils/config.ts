@@ -8,7 +8,7 @@
  *  - Environment: Use uppercase prefixed with REACT_APP_${configuration} to match.
  * _Note: Querystrings will overwrite environment configurations.
  */
-import pkg from '../package.json';
+import pkg from '../../package.json';
 
 const env = process.env;
 const envPrefix = 'REACT_APP';
@@ -22,8 +22,7 @@ const config = {
   version: (pkg.version || '0.0.0'),
   publicUrl: (params.get(`${queryPrefix}-public-url`) ?? env[`${envPrefix}_PUBLIC_URL`]) ?? '/',
   analyticsId: (params.get(`${queryPrefix}-analytics-id`) ?? env[`${envPrefix}_ANALYTICS_ID`]),
+  logging: (params.get(`${queryPrefix}-logging`) ?? env[`${envPrefix}_LOGGING`]),
 }
-
-if (config.debugMode) console.log('Config', config);
 
 export default config;
