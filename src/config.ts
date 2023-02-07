@@ -21,7 +21,9 @@ const config = {
   debugMode: Boolean((params.get(`${queryPrefix}-debug`) ?? env[`${envPrefix}_DEBUG`]) ?? 'false'),
   version: (pkg.version || '0.0.0'),
   publicUrl: (params.get(`${queryPrefix}-public-url`) ?? env[`${envPrefix}_PUBLIC_URL`]) ?? '/',
-  enableAnalytics: Boolean((params.get(`${queryPrefix}-analytics`) ?? env[`${envPrefix}_ANALYTICS`]) ?? 'true'),
+  analyticsId: (params.get(`${queryPrefix}-analytics-id`) ?? env[`${envPrefix}_ANALYTICS_ID`]),
 }
+
+if (config.debugMode) console.log('Config', config);
 
 export default config;
