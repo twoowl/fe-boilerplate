@@ -46,9 +46,7 @@ const SettingsPage = (): React.ReactElement => {
 }
 
 export const settingsPageLoader = async (req: any) => {
-  console.log('req', req);
   const somePromise = new Promise(resolve => setTimeout(() => {
-    console.log('Hello');
     resolve('Complete');
   }, 3000));
   return defer({ isReady: 'yes', someStuff: somePromise });

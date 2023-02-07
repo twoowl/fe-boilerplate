@@ -8,21 +8,23 @@ import {
   SettingsPage,
   settingsPageLoader
 } from './pages';
+import config from './utils/config';
+import { logger } from './utils/logger';
 
-console.log('process.env.REACT_APP_PUBLIC_URL', process.env.REACT_APP_PUBLIC_URL);
+logger.log(config);
 
 const PageRouting: RouteObject[] = [
   {
-    path: `${process.env.REACT_APP_PUBLIC_URL ?? '/'}`,
+    path: `${config.publicUrl}`,
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: `${process.env.REACT_APP_PUBLIC_URL ?? '/'}home`,
+        path: `${config.publicUrl}home`,
         element: <HomePage />,
       },
       {
-        path: `${process.env.REACT_APP_PUBLIC_URL ?? '/'}settings`,
+        path: `${config.publicUrl}settings`,
         element: <SettingsPage />,
         loader: settingsPageLoader,
       },
