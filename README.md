@@ -9,14 +9,10 @@ Use this boilerplate to build consistant, and clean front end applications with 
 - [ ] Enable Redux state management.
 - [ ] Enable offline mode.
 
-### v0.5.0
+### v0.4.0
 - [ ] Setup dockerized environments (Dev, Prod)
 - [ ] Production environment configuration with Nginx
 - [ ] Debug Environment for production
-
-### v0.4.0
-- [ ] Introduce localization & internationalization (i18Next)
-- [ ] Enable Manifest Generator.
 
 ### v0.3.0
 - [x] Create centralized configuration.
