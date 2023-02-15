@@ -1,0 +1,9 @@
+node_modules
+.git
+.huskey
+.eslintignore
+.eslintrc
+.gitignore
+nginx
+.dockerfile
+.dockerignore
