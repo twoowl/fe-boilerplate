@@ -10,8 +10,8 @@ Use this boilerplate to build consistant, and clean front end applications with 
 - [ ] Enable offline mode.
 
 ### v0.4.0
-- [ ] Setup dockerized environments (Dev, Prod)
-- [ ] Production environment configuration with Nginx
+- [x] Setup dockerized environments (Dev, Prod)
+- [x] Production environment configuration with Nginx
 - [ ] Debug Environment for production
 
 ### v0.3.0

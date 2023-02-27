@@ -8,7 +8,7 @@ import { Outlet, NavLink } from 'react-router-dom';
 const StyledApp = styled.div`
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2em;
-  
+
   a.active {
     color: red;
   }

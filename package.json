@@ -1,6 +1,6 @@
 {
   "name": "fe-boilerplate",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "dependencies": {
     "@emotion/styled": "^11.10.5",
@@ -19,7 +19,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "build-container": "docker build -t boilerplate/test -f .dockerfile"
+    "pod-build": "docker build -t boilerplate/test -f .dockerfile",
+    "pod-create": "podman pod create --name rbp-pods --add-host rbp.local:127.0.0.1 -p 8080:80 --infra-name rbp-infra",
+    "pod-run": "podman run -dt --pod rbp-pods --name rbp  boilerplate/test"
   },
   "eslintConfig": {
     "extends": [
